@@ -1,0 +1,142 @@
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.example.com/tu-imagen.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Titulo principal */
+h1.main-title {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Contenedor de las preguntas */
+.question {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para las opciones */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo de los botones de opción */
+button.btn-option {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    margin: 10px;
+    background-color: #f1f1f1;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button.btn-option:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Estilo de los botones de acción */
+button.btn-primary {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background-color: #218838;
+}
+
+button.btn-warning {
+    background-color: #ffc107;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* Resultados */
+#results {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e3e3e3;
+    border-radius: 8px;
+}
+
+/* Ajuste en tamaños para dispositivos pequeños */
+@media (max-width: 600px) {
+    h1.main-title {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    input[type="text"] {
+        width: 80%;
+    }
+}
+
+
+/* Estilo del botón de regresar */
+.btn-secondary {
+    background-color: #6c757d;  /* Color gris */
+    color: white;                /* Texto blanco */
+    padding: 10px 20px;          /* Espaciado alrededor del texto */
+    border: none;                /* Sin borde */
+    border-radius: 5px;          /* Bordes redondeados */
+    cursor: pointer;             /* Cambio de cursor al pasar sobre el botón */
+    font-size: 16px;             /* Tamaño del texto */
+    margin-top: 10px;            /* Espaciado superior */
+    display: block;              /* Asegura que esté en su propia línea */
+    width: 200px;                /* Ancho del botón */
+    margin: 10px auto;           /* Centrado horizontalmente */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;  /* Color ligeramente más oscuro al pasar el ratón */
+}

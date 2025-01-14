@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de Sinónimos y Antónimos</title>
+    <link rel="stylesheet" href="estilosinonimos.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Ejercicios de Sinónimos y Antónimos</h1>
+
+        <div id="questionsContainer">
+            <!-- Las preguntas se llenarán dinámicamente aquí -->
+        </div>
+
+        <!-- Botón para revisar las respuestas y mostrar calificación -->
+        <button class="btn-primary" id="checkButton" onclick="showResults()" style="display:none;">Revisar respuestas</button>
+
+        <!-- Botón para intentar de nuevo y recargar las preguntas -->
+        <button class="btn-warning" id="retryButton" onclick="resetQuestions()">Intentar de nuevo</button>
+
+
+        <button class="btn-secondary" onclick="goBack()">Regresar</button>
+        <!-- Sección para mostrar resultados -->
+        <div id="results"></div>
+    </div>
+
+    <script src="Mate/sino.js"></script>
+</body>
+</html>

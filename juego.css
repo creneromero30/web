@@ -1,0 +1,136 @@
+/* Establecer el fondo de la página */
+body {
+    background-image: url('img/juego.jpg'); /* Asegúrate de tener una imagen de fondo en la ruta correcta */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilo del título */
+#title-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.color1 {
+    color: #FF6347; /* Rojo tomate */
+}
+
+.color2 {
+    color: #32CD32; /* Verde Lima */
+}
+
+.color3 {
+    color: #1E90FF; /* Azul dodger */
+}
+
+/* Menú de juegos: Cambiar a disposición horizontal */
+#game-menu {
+    display: flex;
+    flex-direction: row; /* Alineación horizontal */
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 30px;
+}
+
+/* Estilo de los botones de juego */
+.game-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    color: white;
+}
+
+/* Colores diferentes para cada botón */
+#game1 {
+    background-color: #FF6347; /* Rojo tomate */
+}
+
+#game2 {
+    background-color: #32CD32; /* Verde Lima */
+}
+
+#game3 {
+    background-color: #1E90FF; /* Azul dodger */
+}
+
+
+
+#game4 {
+    background-color: #7fb816; /* Azul dodger */
+}
+
+/* Efecto al pasar el mouse (movimiento y cambio de color) */
+.game-button:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del botón */
+}
+
+#game1:hover {
+    background-color: #FF4500; /* Rojo oscuro */
+}
+
+#game2:hover {
+    background-color: #228B22; /* Verde bosque */
+}
+
+#game3:hover {
+    background-color: #4682B4; /* Azul acero */
+}
+
+
+#game4:hover {
+    background-color: #b2dc3f; /* Azul acero */
+}
+
+/* Estilo del botón de regresar */
+#back-button {
+    margin-top: 40px;
+}
+
+.back-button {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el mouse en el botón de regresar */
+.back-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Definir estilo colorido en la clase personalizada */
+.colorful-btn {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .colorful-btn:hover {
+    background: linear-gradient(to right, #ff7e5f, #ff9966);
+    cursor: pointer;
+  }
+  

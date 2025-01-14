@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Título de la página -->
+        <div id="title-container">
+            <h1>
+                <span class="color1">Bienvenido</span> 
+                <span class="color2">a</span>
+                <span class="color3">Juegos</span>
+            </h1>
+        </div>
+
+        <!-- Menú de juegos (botones) -->
+        <div id="game-menu">
+            <button class="game-button" id="game1" onclick="startGame('Juego 1')">Mario</button>
+            <button class="game-button" id="game4" onclick="startGame('Juego 4')">Salto y Bajo</button>
+            <button class="game-button" id="game2" onclick="startGame('Juego 2')">Ordena</button>
+            <button class="game-button" id="game3" onclick="startGame('Juego 3')">Juego de Adivinanzas</button>
+
+
+
+
+            <button class="btn colorful-btn mt-4" onclick="goBack()">Regresar</button>
+
+            <script>
+                // Función para regresar a la página anterior
+                function goBack() {
+                    window.history.back();
+                }
+            </script>
+            
+        </div>
+       
+
+       
+
+
+    </div>
+
+    
+
+    <script src="Mate/juego.js"></script>
+</body>
+</html>

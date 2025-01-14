@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplicación</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="mate.css">
+</head>
+<body class="math">
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Educativo Infantil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+        </div>
+        <button class="btn btn-secondary mt-4" onclick="goBack()">Regresar</button>
+
+<script>
+    // Función para regresar a la página anterior
+    function goBack() {
+        window.history.back();
+    }
+</script>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1>Ejercicio de Multiplicación</h1>
+        <p>Resuelve las siguientes multiplicaciones:</p>
+
+        <div id="exerciseContainer">
+            <!-- Las preguntas de multiplicación se generarán dinámicamente aquí -->
+            <div id="questionsContainer"></div>
+            <button class="btn btn-primary mt-3" onclick="checkAnswers()">Comprobar Respuestas</button>
+        </div>
+
+        <p id="result" class="mt-4"></p>
+
+        <!-- Botón para intentar de nuevo -->
+        <button class="btn btn-warning mt-4" onclick="generateNewQuestions()">Intentar de nuevo</button>
+    </div>
+
+
+
+    
+
+    <script src="script.js"></script>
+    <script>
+        // Función para generar un número aleatorio dentro de un rango
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        // Variables globales para almacenar las preguntas y respuestas correctas
+        let questions = [];
+        let correctAnswers = [];
+
+        // Función para generar nuevas preguntas de multiplicación con números aleatorios entre las tablas del 2 al 10
+        function generateNewQuestions() {
+            questions = [];
+            correctAnswers = [];
+            let questionsHTML = '';
+
+            for (let i = 0; i < 10; i++) {
+                // Elegir una tabla aleatoria entre 2 y 10
+                const table = getRandomNumber(2, 10);
+                // Elegir un número aleatorio entre 1 y 10 para multiplicar
+                const multiplier = getRandomNumber(1, 10);
+
+                // Almacenamos la pregunta y su respuesta correcta
+                questions.push({ table, multiplier });
+                correctAnswers.push(table * multiplier);
+
+                // Agregamos el HTML para cada pregunta
+                questionsHTML += `
+                    <div class="mb-3">
+                        <label for="question${i + 1}" class="form-label" id="question${i + 1}Label">¿Cuánto es ${table} x ${multiplier}?</label>
+                        <input type="number" id="question${i + 1}" class="form-control">
+                    </div>
+                `;
+            }
+
+            // Insertamos las preguntas generadas en el contenedor
+            document.getElementById("questionsContainer").innerHTML = questionsHTML;
+
+            // Limpiar los campos de respuestas y resultados
+            for (let i = 0; i < 10; i++) {
+                document.getElementById(`question${i + 1}`).value = "";
+            }
+            document.getElementById("result").textContent = "";  // Limpiar el puntaje
+        }
+
+        // Función para comprobar las respuestas
+        function checkAnswers() {
+            let score = 0;
+
+            // Comprobamos cada respuesta ingresada
+            for (let i = 0; i < 10; i++) {
+                const userAnswer = parseInt(document.getElementById(`question${i + 1}`).value);
+                if (userAnswer === correctAnswers[i]) {
+                    score++;
+                }
+            }
+
+            // Mostrar el puntaje
+            document.getElementById("result").textContent = `Tu puntaje es: ${score}/10`;
+        }
+
+        // Inicializar las preguntas cuando la página se cargue
+        window.onload = generateNewQuestions;
+    </script>
+
+    <script src="Mate/js1.js"></script>
+
+</body>
+</html>

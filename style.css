@@ -1,0 +1,50 @@
+/* Estilos generales para la página */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para la página de inicio de sesión */
+body.login {
+    background-image: url('img/inicio.jpg.webp'); /* Fondo de inicio de sesión */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+h1 {
+    color: #8bb521;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.card {
+    border-radius: 20px;
+    opacity: 0.9;
+    background-color: rgba(89, 190, 73, 0.8);
+}
+
+.container {
+    margin-top: 100px;
+}
+
+/* Estilos para la pantalla de menú */
+body.menu {
+    background-image: url('img/educativo.jpg'); /* Fondo del menú */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+#menu button {
+    width: 30%;
+}
+
+
+
+/* Fondo específico para la pantalla de matemáticas */
+body.math {
+    background-image: url('img/Mate.jpg'); /* Fondo de matemáticas */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}

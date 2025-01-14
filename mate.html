@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matemáticas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="math"> <!-- Cambiar a 'math' para el fondo específico de matemáticas -->
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Educativo Infantil</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            
+        </div>
+
+        <button class="btn btn-secondary mt-4" onclick="goBack()">Regresar</button>
+
+<script>
+    // Función para regresar a la página anterior
+    function goBack() {
+        window.history.back();
+    }
+</script>
+    </nav>
+
+    <div class="container text-center mt-5">
+        <h1>Ejercicios de Matemáticas</h1>
+        <p>Selecciona un ejercicio para practicar.</p>
+
+        <div class="d-flex justify-content-around mt-4">
+            <button class="btn btn-primary" id="additionBtn">Suma</button>
+            <button class="btn btn-secondary" id="subtractionBtn">Resta</button>
+        </div>
+        <div class="d-flex justify-content-around mt-3">
+            <button class="btn btn-success" id="multiplicationBtn">Multiplicación</button>
+            <button class="btn btn-danger" id="divisionBtn">División</button>
+        </div>
+        <div class="d-flex justify-content-around mt-3">
+            <button class="btn btn-warning" id="squareRootBtn">Raíz Cuadrada</button>
+        </div>
+    </div>
+
+    
+
+    <script src="Mate/jss.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+
+
+/* Fondo específico para la pantalla de matemáticas */
+body.math {
+    background-image: url('img/nuo.jpg'); /* Fondo de matemáticas */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}

@@ -1,0 +1,219 @@
+/* styles.css */
+
+/* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo de la página con imagen */
+body {
+    background-image: url('img/lit.jpg'); /* Reemplaza con la URL de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Hace que la imagen no se mueva cuando se hace scroll */
+    font-family: 'Arial', sans-serif;
+}
+
+/* Título principal */
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 40px;
+}
+
+/* Estilo para el contenedor de los ejercicios */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente para resaltar el contenido */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Botones del menú */
+.btn-group-vertical {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.btn-primary {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
+
+/* Estilo de los ejercicios */
+.exercise {
+    margin-top: 25px;
+    padding: 25px;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #4CAF50;
+    font-size: 1.75rem;
+    margin-bottom: 15px;
+}
+
+.question {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.sentence {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Botones de las opciones de respuesta */
+button.btn-outline-primary {
+    background-color: #f1f1f1;
+    color: #4CAF50;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding: 10px 15px;
+    margin: 5px;
+    width: 200px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.btn-outline-primary:hover {
+    background-color: #4CAF50;
+    color: white;
+    transform: translateY(-5px);
+}
+
+button.btn-outline-success {
+    background-color: #f9f9f9;
+    color: #28a745;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    padding: 10px 15px;
+    margin: 5px;
+    width: 200px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.btn-outline-success:hover {
+    background-color: #28a745;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Espaciado para los resultados */
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+}
+
+#resultComplete,
+#resultVerbs,
+#resultFillIn,
+#resultImageWriting {
+    margin-top: 15px;
+}
+
+/* Botón de "Intentar de nuevo" */
+button.btn-warning {
+    background-color: #ff9800;
+    color: white;
+    font-size: 1.25rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.btn-warning:hover {
+    background-color: #e68900;
+    transform: translateY(-5px);
+}
+
+/* Botón de calificación */
+button.btn-success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.25rem;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.btn-success:hover {
+    background-color: #45a049;
+    transform: translateY(-5px);
+}
+
+/* Estilo para las imágenes */
+#imageContainer img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Campo de texto para completar la oración */
+input[type="text"] {
+    font-size: 1.25rem;
+    padding: 10px;
+    width: 250px;
+    border-radius: 5px;
+    border: 2px solid #4CAF50;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #28a745;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .btn-group-vertical {
+        display: block;
+    }
+
+    .btn-primary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .exercise {
+        padding: 20px;
+    }
+}
+
+
+button.btn-secondary {
+    background-color: #6c757d; /* Gris */
+    color: white;
+    font-size: 1.25rem;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button.btn-secondary:hover {
+    background-color: #5a6268; /* Gris oscuro */
+    transform: translateY(-5px);
+}
